@@ -1,0 +1,492 @@
+@font-face {
+    font-family: "loto_r";
+    src: url(/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "loto_b";
+    src: url(/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: "loto_m";
+    src: url(/fonts/Lato-Medium.ttf);
+}
+
+@font-face {
+    font-family: "robs";
+    src: url(/fonts/RobotoSlab.ttf);
+}
+
+
+@font-face {
+    font-family: "loto_sb";
+    src: url(/fonts/Lato-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "loto_eb";
+    src: url(/fonts/Lato-ExtraBold.ttf);
+}
+
+body{
+    margin:0px auto;
+    font-family: "loto_r";
+    color: #000;
+    font-size: 14px;
+    background-color: #EDEFF0;
+}
+
+.body_two{
+    margin:0px auto;
+    font-family: "loto_r";
+    color: #000;
+    font-size: 14px;
+    background-color: #EDEFF0;
+}
+
+.container{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'loto_b';
+    font-size: 14px;
+    color: black;
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+p{
+    text-decoration: none;
+    font-family: 'loto_b';
+    font-size: 14px;
+    color: black; 
+}
+
+.li_bgc{
+    height: 55px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_search_sub_sign {
+    display: flex;
+    justify-content: center;
+    gap: 900px;
+    height: 50px;
+}
+
+
+
+.log_img_sec{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+}
+
+.sign{
+    text-decoration: none;
+    font-family: 'loto_r';
+    font-size: 14px;
+    color: #4B5157;
+}
+
+.line{
+    width: 1366px auto;
+    height: 1px;
+    background-color: #dcdcdc;
+}
+
+.logo_others{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    gap: 250px;
+}
+
+.logo{
+    font-family: 'loto_eb';
+    font-size: 40px;
+    color: #000;
+}
+
+.ph_text{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.date_pog{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.date{
+    text-decoration: none;
+    font-family: 'loto_r';
+    font-size: 14px;
+    color: #4B5157;
+}
+
+/* blackbox */
+
+.blackbox{
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #262D33;
+    position: absolute;
+    z-index: -1;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    margin: 0 auto;
+}
+
+.href_nav{
+    text-decoration: none;
+    font-family: 'loto_b';
+    font-size: 14px;
+    color: white;
+    transition: 0.3s linear;
+
+}
+
+.href_nav:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: #333c45;
+}
+
+.text_img_bt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0px 15px 0px 15px;
+}
+
+.box_transparency{
+    width: 1366px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: #333c45;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin: 30px 0px 30px 0px;
+}
+
+.text_wide_card{
+    width: 154px;
+    height: 75px;
+    font-family: 'robs';
+    font-size: 16px;
+    color: #fff;
+}
+
+.line_vert{
+    width: 1px;
+    height: 75px;
+    background-color: #48525c;
+}
+
+/* reg */
+
+
+
+.blackbox_two{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #262D33;
+    position: absolute;
+    z-index: -1;
+}
+
+.align_box_f{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    width: 270px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 100px 0px;
+    background: #d2e4ed;
+    border-radius: 10px;
+}
+
+.box_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.regist{
+    text-align: center;
+    font-family: 'loto_eb';
+    color: #000;
+    font-size: 24px;
+}
+
+/* личный каб */
+
+.align_user_box{
+    display: flex;
+    justify-content: center;
+}
+
+.graybox{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_align{
+ 
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 10px;
+    
+}
+
+.form_align input{
+
+    width: 300px;
+}
+
+ /* CSS для оформления блоков */
+ .news-container {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+
+.news-block {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 170px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-block h3 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.news-block .description {
+    font-size: 0.9em;
+    color: #555;
+    height: 3em;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-block .description:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    background: linear-gradient(to top, white, transparent); 
+}
+
+.news-block .description.full {
+    height: auto;
+}
+
+.news-block .description.full:after {
+    display: none;
+}
+
+.show-more {
+    cursor: pointer;
+    color: #007BFF;
+    font-size: 0.9em;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.news-block .date {
+    font-size: 0.8em;
+    color: #999;
+    margin-top: 10px;
+}
+
+.options-menu {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+}
+
+.options-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 100;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9em;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+}
+
+  /* CSS для оформления страницы поста и комментариев */
+  .post-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.post-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.post-date {
+    color: #999;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+.post-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.back-button, .comment-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.back-button:hover, .comment-button:hover {
+    background-color: #0056b3;
+}
+.comment-section {
+    margin-top: 30px;
+}
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.comment .likes {
+    font-size: 0.9em;
+    color: #666;
+}
+.comment .like-button {
+    cursor: pointer;
+    color: #007BFF;
+    text-decoration: none;
+}
+.comment-form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.like-button {
+    width: 30px; /* Размер иконки */
+    height: 30px;
+    cursor: pointer;
+    margin: 0px auto;
+}
+
+.align_news_blog{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px; 
+    height: 400px;  
+}
+
+.top-comments{
+    width: 463px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #6E99AE;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title_top5{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.line_vert_top{
+    width: 250px;
+    height: 1px;
+    background-color: #B4D1E0;
+}
+
+.white_text_comm{
+    color: white;
+    font-size: 20px;
+}
+
+.align_comments_top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
