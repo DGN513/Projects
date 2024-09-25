@@ -490,3 +490,15 @@ gap: 15px;
     flex-direction: column;
     gap: 10px;
 }
+
+.weather_ufa{
+    text-decoration: none;
+    font-family: 'loto_r';
+    font-size: 14px;
+    color: #4B5157;
+}
+
+.align_weather{
+    display: flex;
+    gap: 10px;
+}
