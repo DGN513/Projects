@@ -48,44 +48,40 @@ if(!empty($_COOKIE['idUser'])){
             <p class="date"><?php echo date("D, F j, Y"); ?></p>
 
             <div class="align_weather">
-
                 <img src="/img/Sun.svg" alt="">
-
-
-                <h1>Текущая погода в Уфе</h1>
                 <div id="weather">
-
                     <p class='weather_ufa'>Загрузка данных...</p>
-
                 </div>
-
             </div>
-
-
         </div>
     </div>
 </div>
 
 <script>
-    $(document).ready(function() {
-        // Отправляем запрос на сервер для получения погоды
-            $.ajax({
-            url: 'get_weather.php',
-            type: 'GET',
-                success: function(data) {
+   $(document).ready(function() {
+    $.ajax({
+        url: 'get_weather.php',
+        type: 'GET',
+        success: function(data) {
+            try {
                 var weather = JSON.parse(data);
-                var html = "<p>Температура: " + weather.main.temp + "°C</p>";
-                html += "<p>Описание: " + weather.weather[0].description + "</p>";
-                html += "<p>Влажность: " + weather.main.humidity + "%</p>";
-                $('weather').html(html);
-                },
-            error: function() {
-            $('weather').html('<p>Ошибка при получении данных</p>');
+                if (weather.error) {
+                    $('#weather').html('<p>' + weather.error + '</p>');
+                } else {
+                    var html = "<p class='weather_ufa'>Температура: " + weather.main.temp + "°C</p>";
+                    html += "<p class='weather_ufa'>Описание: " + weather.weather[0].description + "</p>";
+                    html += "<p class='weather_ufa'>Влажность: " + weather.main.humidity + "%</p>";
+                    $('#weather').html(html);
+                }
+            } catch (e) {
+                $('#weather').html('<p>Ошибка при обработке данных</p>');
             }
-        });
+        },
+        error: function() {
+            $('#weather').html('<p>Ошибка при получении данных</p>');
+        }
     });
+});
 </script>
-
-
 </body>
 </html>
