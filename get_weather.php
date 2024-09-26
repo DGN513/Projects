@@ -8,26 +8,9 @@ $cityId = "479561"; // ID для Уфы
 // Формируем URL для запроса к API OpenWeatherMap
 $url = "http://api.openweathermap.org/data/2.5/weather?id={$cityId}&units=metric&lang=ru&appid={$apiKey}";
 
-// Инициализация cURL
-$ch = curl_init();
+// Выполняем запрос к API
+$response = file_get_contents($url);
 
-// Настройки cURL
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_FAILONERROR, true); // Вернет ошибку при 4xx/5xx ответах
-
-// Выполнение запроса
-$response = curl_exec($ch);
-
-// Обработка ошибок
-if ($response === false) {
-    $error = curl_error($ch);
-    echo "Ошибка при запросе: $error";
-} else {
-    // Выводим полученные данные
-    echo $response;
-}
-
-// Закрываем cURL
-curl_close($ch);
+// Выводим полученные данные
+echo $response;
 ?>

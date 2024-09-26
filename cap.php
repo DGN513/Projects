@@ -51,12 +51,14 @@ if(!empty($_COOKIE['idUser'])){
 
                 <img src="/img/Sun.svg" alt="">
 
+
+                <h1>Текущая погода в Уфе</h1>
                 <div id="weather">
 
                     <p class='weather_ufa'>Загрузка данных...</p>
 
                 </div>
-                
+
             </div>
 
 
@@ -66,22 +68,24 @@ if(!empty($_COOKIE['idUser'])){
 
 <script>
     $(document).ready(function() {
-        $.ajax({
+        // Отправляем запрос на сервер для получения погоды
+            $.ajax({
             url: 'get_weather.php',
             type: 'GET',
-            success: function(data) {
+                success: function(data) {
                 var weather = JSON.parse(data);
-                var html = "<p class='weather_ufa'>Температура: " + weather.main.temp + "°C</p>";
-                html += "<p class='weather_ufa'>Описание: " + weather.weather[0].description + "</p>";
-                html += "<p class='weather_ufa'>Влажность: " + weather.main.humidity + "%</p>";
-                $('#weather').html(html); // Изменено с 'weather' на '#weather'
-            },
+                var html = "<p>Температура: " + weather.main.temp + "°C</p>";
+                html += "<p>Описание: " + weather.weather[0].description + "</p>";
+                html += "<p>Влажность: " + weather.main.humidity + "%</p>";
+                $('weather').html(html);
+                },
             error: function() {
-                $('#weather').html('<p>Ошибка при получении данных</p>'); // Изменено с 'weather' на '#weather'
+            $('weather').html('<p>Ошибка при получении данных</p>');
             }
         });
     });
 </script>
+
 
 </body>
 </html>
